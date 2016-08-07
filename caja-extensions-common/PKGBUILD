@@ -1,4 +1,4 @@
-# Maintainer:   Νικόλαος Κυριάκος Φυτίλης <n-fit@live.com> 
+# Maintainer:   Νικόλαος Κυριάκος Φυτίλης <n-fit@live.com>
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
@@ -6,12 +6,11 @@ _ver=1.15
 _pkgbase=caja-extensions
 pkgname=(caja-extensions-common caja-gksu caja-image-converter caja-open-terminal caja-sendto caja-share)
 pkgver=${_ver}.0
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE extensions for Caja (GTK3 version)"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')
 provides=("${_pkgbase}" "${_pkgbase}-gtk3")
-conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('caja>=1.15' 'dbus-glib' 'gksu' 'gtk3' 'gupnp' 'imagemagick' 'samba')
 makedepends=('mate-common' 'caja>=1.15')

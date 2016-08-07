@@ -1,10 +1,15 @@
 
 if [ ! -z $@ ]
   then
-    name=$1
-    url=$2
-    dl=$3
-    upd=$4
+    if [ -e $@ ]
+      then
+        source $@
+      else
+        name=$1
+        url=$2
+        dl=$3
+        upd=$4
+      fi
   else
     source ./update.conf
 fi
@@ -38,6 +43,13 @@ update_ver (){
     counter=$((counter + 1))
 
   done
+
+if [ "$counter" -gt 1 ] ; then
+  export copular_verb='were'
+else
+  export copular_verb='was'
+fi
+
 }
 
 notify_user () {
@@ -47,6 +59,7 @@ for i in ${pkgs[@]} ; do
   echo $i'	' "${shas[$counter]}" >> $dir/maintain.txt
   counter=$((counter + 1))
 done
+
 }
 
 mod_pkg () {
@@ -99,8 +112,8 @@ if [ "$upd" == "yes" ]
     rm ~/.cache/notify-$name/$dl.old
     mv ~/.cache/notify-$name/$dl ~/.cache/notify-$name/$dl.old
     echo Will commit
-    git-commit -a -v -m `cat $dir/maintain.txt`
-    git push
+    git commit -a -m "$(echo ${pkgs[@]}) $copular_verb updated"
+#    git push
   else rm ~/.cache/notify-$name/$dl
 fi
 
