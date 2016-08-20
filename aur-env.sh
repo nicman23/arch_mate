@@ -1,4 +1,4 @@
-mate_ver=1.15
+mate_ver=1.17
 theme_ver=3.20
 declare -a list
 declare -a aurlist
