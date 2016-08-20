@@ -5,7 +5,7 @@
 _ver=1.17
 _pkgbase=atril
 pkgname="${_pkgbase}"
-pkgver=${_ver}.3
+pkgver=${_ver}.0
 pkgrel=1
 pkgdesc="MATE document viewer"
 url="http://mate-desktop.org"
