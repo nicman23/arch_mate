@@ -14,7 +14,7 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('gtk-engines' 'gtk-engine-murrine' 'gtk-update-icon-cache'
-         'librsvg' 'mate-icon-theme')
+         'librsvg' 'mate-icon-theme>=1.15')
 makedepends=('mate-common>=1.15' 'icon-naming-utils')
 groups=('mate' 'mate-gtk3')
 source=("http://pub.mate-desktop.org/releases/themes/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
