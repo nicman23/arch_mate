@@ -26,8 +26,6 @@ for i in ${list[@]}
   do aurlist=(${aurlist[@]} $i-dev)
 done
 
-aurlist=(${aurlist[@]} mate-themes-$theme_ver-gtk3)
-
 b='pkgname="${_pkgbase}-dev"'
 c=">=$mate_ver"
 d="-dev"
@@ -37,6 +35,13 @@ for i in ${aurlist[@]}
   fi
   sed -i -e "s/$c/$d/g" $i/PKGBUILD
 done
+
+a='pkgname="${_pkgbase}'
+b='pkgname="${_pkgbase}-3.20-gtk3'
+sed -i -e "s/$a/$b/g" mate-themes-$theme_ver-gtk3/PKGBUILD
+sed -i -e "s/$c/$d/g" mate-themes-$theme_ver-gtk3/PKGBUILD
+
+aurlist=(${aurlist[@]} mate-themes-$theme_ver-gtk3)
 
 a="caja>=$mate_ver" ; b="caja-dev"
 sed -i -e "s/$a/$b/g" ./caja-extensions-common-dev/PKGBUILD
