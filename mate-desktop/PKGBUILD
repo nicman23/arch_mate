@@ -16,7 +16,7 @@ license=('GPL' 'LGPL')
 depends=('dconf' 'gtk3' 'startup-notification')
 makedepends=('gobject-introspection' 'mate-common>=1.16' 'yelp-tools')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('03fe1d8769d88dc9a6ed059acc8e02d7141ba3f9')
+sha1sums=('624d2e7af6416cb81d1d0946ab66bbb34fc7d150')
 
 prepare() {
     cd "${srcdir}"

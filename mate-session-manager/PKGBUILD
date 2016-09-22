@@ -23,7 +23,7 @@ optdepends=('lightdm-gtk-greeter: A lightweight display manager'
             'xdg-user-dirs-gtk: Add autostart that prompts to rename user directories when switching locales')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('f8e7383072511117a7f1fe4ca56afe7a5c3c9e35')
+sha1sums=('553b28bbbd9164e0403783db58015fa42d3ae38d')
 
 prepare() {
     cd "${srcdir}"

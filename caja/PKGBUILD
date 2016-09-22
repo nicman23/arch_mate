@@ -21,7 +21,7 @@ optdepends=('gstreamer: automatic media playback when mouseover'
             'gvfs-smb: To connect to Samba/Windows shares')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('630001c353af6947f91d43b50cf33cc924a42126')
+sha1sums=('5d46c0ec4f8b757f85cb2da1c501e5cdfa16a042')
 
 prepare() {
     cd "${srcdir}"

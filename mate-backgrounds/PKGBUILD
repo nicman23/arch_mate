@@ -16,7 +16,7 @@ license=('GPL')
 makedepends=('mate-common>=1.16')
 groups=('mate' 'mate-gtk3')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('a7929a9bcd40d14f26e1a33da6bf9d4aceadc15f')
+sha1sums=('02c3371b24df915cf6fd4168d79d310447c258ec')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

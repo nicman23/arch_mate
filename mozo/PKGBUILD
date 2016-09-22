@@ -17,7 +17,7 @@ depends=('gtk-update-icon-cache' 'mate-menus>=1.16' 'python2-gobject')
 makedepends=('mate-common>=1.16')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('f15807f9050cb92d444c9e2e06c73b5aedda85cb')
+sha1sums=('bd9b1e70a6976940d40ef78f58c11a96ffa41a26')
 
 prepare() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

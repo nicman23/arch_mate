@@ -19,7 +19,7 @@ makedepends=('mate-common>=1.16' 'yelp-tools')
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('44e29286538caac21597e543e208bd99254e7b9a')
+sha1sums=('b9b3c14812fcb7ab5dfd2c3498eac639d2e63be6')
 
 prepare() {
     cd "${srcdir}"

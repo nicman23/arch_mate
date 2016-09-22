@@ -17,7 +17,7 @@ depends=('glib2' 'python2')
 makedepends=('gobject-introspection' 'mate-common>=1.16')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('6083819d5e3e07c6317a49247fc63c178f80db86')
+sha1sums=('40b73ae7a151259c32ecd150c8fb77b5dc696f62')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

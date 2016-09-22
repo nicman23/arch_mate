@@ -17,7 +17,7 @@ groups=('mate')
 depends=('dconf' 'gtk3' 'iso-codes' 'libxklavier')
 makedepends=('mate-common>=1.16')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('79886718fdca006066897b78beb4d77c939817d3')
+sha1sums=('3d73769c887cf709b0615808679fdac02491cd0a')
 
 prepare() {
     cd "${srcdir}"

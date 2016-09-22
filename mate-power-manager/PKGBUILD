@@ -21,7 +21,7 @@ optdepends=('mate-panel: Set brightness and inhibit power management from the pa
             'yelp: for reading MATE help documents')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
 groups=('mate-extra')
-sha1sums=('c8e0c7d40cd457327f79fbf966168bae925b144d')
+sha1sums=('a7089947d4ac2151e2b8182f4d130aba08d804d2')
 
 prepare() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"
