@@ -15,7 +15,7 @@ depends=("caja>=1.16" "dbus-glib" "gksu" "gtk3" "gupnp" "imagemagick" "samba")
 groups=("mate-extra")
 makedepends=("mate-common>=1.16" "caja>=1.16")
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=("9b27e46a731b117815862229c38445ef94afa600")
+sha1sums=("9b15862229c38445ef94afa600")
 
 prepare() {
     cd "${srcdir}"
