@@ -1,11 +1,13 @@
 # arch_mate
 PKGBUILD's for MATE in Arch Linux's
 
-You can install everything with mate-meta-dev package from the aur.
+You can install everything with mate-meta-dev package from the aur but that is the development -old- branch.
+
+Currently there is no gtk 3.22 on official repos, so wait for that.
 
 Features:
 
-* Updated to latest development upstream:  1.15.x 
+* Updated to latest development upstream:  1.16.x 
 * GTK3 PKGBUILDs only
 * Build test all packages. The current methodology is to run them in my main machine as my daily driver.
 
