@@ -2,7 +2,7 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.17
+_ver=1.16
 _pkgbase=atril
 pkgname="${_pkgbase}"
 pkgver=${_ver}.0
@@ -14,9 +14,9 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dconf' 'dbus' 'desktop-file-utils' 'glib2' 'gtk3' 'gtk-update-icon-cache' 
-         'libsecret' 'libsm' 'libspectre' 'mate-desktop>=1.17' 'mathjax' 
+         'libsecret' 'libsm' 'libspectre' 'mate-desktop>=1.16' 'mathjax' 
          'poppler-glib' 'webkitgtk' 'zlib')
-makedepends=('caja>=1.17' 'djvulibre' 'gtk-doc>=1.13' 'intltool>=0.50.1' 'gobject-introspection' 'libgxps'
+makedepends=('caja>=1.16' 'djvulibre' 'gtk-doc>=1.13' 'intltool>=0.50.1' 'gobject-introspection' 'libgxps'
              'texlive-bin' 'yelp-tools' 'webkit2gtk')
 optdepends=('caja: Document Properties extension'
             'djvulibre: DjVu support'

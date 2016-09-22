@@ -2,7 +2,7 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.17
+_ver=1.16
 _pkgbase=mate-common
 pkgname="${_pkgbase}"
 pkgver=${_ver}.0

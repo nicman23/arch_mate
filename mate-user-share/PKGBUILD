@@ -2,7 +2,7 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.17
+_ver=1.16
 _pkgbase=mate-user-share
 pkgname="${_pkgbase}"
 pkgver=${_ver}.0
@@ -15,7 +15,7 @@ conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dbus-glib' 'desktop-file-utils' 'dconf' 'glib2' 'gtk-update-icon-cache'
          'libunique3' 'mod_dnssd')
-makedepends=('caja>=1.17' 'libcanberra' 'libnotify' 'mate-common>=1.17' 'yelp-tools' 'libunique3')
+makedepends=('caja>=1.16' 'libcanberra' 'libnotify' 'mate-common>=1.16' 'yelp-tools' 'libunique3')
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
