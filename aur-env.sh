@@ -1,5 +1,4 @@
 mate_ver=1.17
-theme_ver=3.20
 declare -a list
 declare -a aurlist
 
@@ -13,24 +12,22 @@ mkdir aur &> /dev/null ; if [ "$?" = '0' ]
 then
   cd aur
   for i in ${list[@]} caja-extensions-common ; do git clone git+ssh://aur@aur.archlinux.org/$i-dev.git ; done
-  git clone  git+ssh://aur@aur.archlinux.org/mate-themes-$theme_ver-gtk3.git
 else
   cd aur
 fi
 
 for i in ${list[@]} caja-extensions-common ; do cp -r  ../$i/* ./$i-dev/ ; done
-cp ../mate-themes/* ./mate-themes-$theme_ver-gtk3/
 
 
 for i in ${list[@]}
   do aurlist=(${aurlist[@]} $i-dev)
 done
 
-aurlist=(${aurlist[@]} mate-themes-$theme_ver-gtk3)
+#aurlist=(${aurlist[@]} mate-themes-$theme_ver-gtk3)
 
 b='pkgname="${_pkgbase}-dev"'
 c=">=$mate_ver"
-d="-dev"
+d="-dev'"
 for i in ${aurlist[@]}
   do a=$(cat $i/PKGBUILD | grep 'pkgname="${_pkgbase}"') ; if [ ! -z $a ]
     then sed -i -e "s/$a/$b/g" $i/PKGBUILD
@@ -38,6 +35,8 @@ for i in ${aurlist[@]}
   sed -i -e "s/$c/$d/g" $i/PKGBUILD
 done
 
+
+#caja extensions bs
 a="caja>=$mate_ver" ; b="caja-dev"
 sed -i -e "s/$a/$b/g" ./caja-extensions-common-dev/PKGBUILD
 a="-dev" ; b=">=$mate_ver" ; c='-dev-dev'
@@ -59,6 +58,7 @@ status() {
   fi
 }
 
+#commit
 for i in ./*/
   do cd $i
     status ; if [ "$?" = '1' ]
