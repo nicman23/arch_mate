@@ -1,6 +1,6 @@
 ver=$1
 
-sedvar='sha1sums=(\''
+echo -n > ~/.cache/notify-*/SHA1SUMS.old
 
 for i in atril/PKGBUILD ; do
   sed -i -e "s/pkgver=\${_ver}.*/pkgver=\${_ver}.0/g" $i
