@@ -14,9 +14,9 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL' 'LGPL')
 depends=('dconf' 'gtk3' 'startup-notification')
-makedepends=('gobject-introspection' 'mate-common>=1.17
+makedepends=('gobject-introspection' 'mate-common>=1.17' 'yelp-tools')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('eb60fd8cd0289a86ac1e0e487e066423a6774c8f')
+sha1sums=('624d2e7af6416cb81d1d0946ab66bbb34fc7d150')
 
 prepare() {
     cd "${srcdir}"

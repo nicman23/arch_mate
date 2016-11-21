@@ -14,12 +14,12 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dbus-glib' 'dconf' 'desktop-file-utils' 'glib2' 'gsettings-desktop-schemas'
-         'gtk3' 'gtk-update-icon-cache' 'mate-desktop>=1.17
-         'mate-settings-daemon>=1.17
-         'libmatekbd>=1.17
+         'gtk3' 'gtk-update-icon-cache' 'mate-desktop>=1.17' 'mate-menus>=1.17'
+         'mate-settings-daemon>=1.17' 'marco>=1.17' 'libgtop' 
+         'libmatekbd>=1.17' 'libunique3' 'librsvg' 'libxss' 'libxt'
          'shared-mime-info' 'startup-notification')
-makedepends=('docbook2x' 'mate-common>=1.17
-             'marco' 'mate-desktop>=1.17
+makedepends=('docbook2x' 'mate-common>=1.17' 'yelp-tools' 'libmatekbd' 'libunique3'
+             'marco' 'mate-desktop>=1.17' 'mate-settings-daemon')
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")

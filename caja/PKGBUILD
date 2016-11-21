@@ -14,14 +14,14 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dbus' 'desktop-file-utils' 'exempi' 'glib2' 'gtk3' 'gtk-update-icon-cache'
-         'gvfs' 'libexif' 'libunique3' 'libxt' 'mate-desktop>=1.17
+         'gvfs' 'libexif' 'libunique3' 'libxt' 'mate-desktop>=1.17' 'shared-mime-info'
          'startup-notification')
-makedepends=('gobject-introspection' 'mate-common>=1.17
+makedepends=('gobject-introspection' 'mate-common>=1.17')
 optdepends=('gstreamer: automatic media playback when mouseover'
             'gvfs-smb: To connect to Samba/Windows shares')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('e7ddf71640b7ec509f71160301f1db348d5dcb1b')
+sha1sums=('5d46c0ec4f8b757f85cb2da1c501e5cdfa16a042')
 
 prepare() {
     cd "${srcdir}"
