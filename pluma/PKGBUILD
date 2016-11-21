@@ -2,7 +2,7 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.16
+_ver=1.17
 _pkgbase=pluma
 pkgname="${_pkgbase}"
 pkgver=${_ver}.0
@@ -14,12 +14,12 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('desktop-file-utils' 'enchant' 'glib2' 'gtk3' 'gtksourceview2' 'iso-codes'
-         'libsm' 'mate-desktop>=1.16' 'gtksourceview3' 'python2-gobject' 'zenity')
-makedepends=('mate-common>=1.16' 'yelp-tools' 'gtksourceview3' 'mate-desktop>=1.16')
+         'libsm' 'mate-desktop>=1.17
+makedepends=('mate-common>=1.17
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('14a0497fade1e3fd40a39eafb28390975abd12a6')
+sha1sums=('a26fc1b6409abc25d4fefe05083fcb775cb68fac')
 
 prepare() {
     cd "${srcdir}"

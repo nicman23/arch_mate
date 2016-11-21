@@ -2,7 +2,7 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.16
+_ver=1.17
 _pkgbase=libmatemixer
 pkgname="${_pkgbase}"
 pkgver=${_ver}.0
@@ -14,7 +14,7 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('LGPL')
 depends=('alsa-lib' 'libpulse')
-makedepends=('mate-common>=1.16')
+makedepends=('mate-common>=1.17
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
 sha1sums=('72895e05834856c6ed3185ae152a9c8030ccdf54')
 

@@ -1,7 +1,9 @@
 ver=$1
 
-for i in */PKGBUILD ; do
+sedvar='sha1sums=(\''
+
+for i in atril/PKGBUILD ; do
   sed -i -e "s/pkgver=\${_ver}.*/pkgver=\${_ver}.0/g" $i
-  sed -i -e "s/=1.17/=$ver/g" $i
+  sed -i -e "s/=1.1.*/=$ver/g" $i
   sed -i -e "s/pkgrel=.*/pkgrel=1/g" $i
 done
