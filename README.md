@@ -1,3 +1,11 @@
+#THIS IS AUTOMATED:
+
+Mate 1.17 does not even really exist. At the time of writting only 6 packages are updated.
+
+Use with care
+
+Again this is on a cronjob. If there is any issue please inform me.
+
 # arch_mate
 PKGBUILD's for MATE in Arch Linux's
 
@@ -5,7 +13,7 @@ You can install everything with mate-meta-dev package from the aur.
 
 Features:
 
-* Updated to latest development upstream:  1.15.x 
+* Updated to latest development upstream:  1.17.x 
 * GTK3 PKGBUILDs only
 * Build test all packages. The current methodology is to run them in my main machine as my daily driver.
 
