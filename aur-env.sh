@@ -27,7 +27,7 @@ done
 
 b='pkgname="${_pkgbase}-dev"'
 c=">=$mate_ver"
-d="-dev'"
+d="-dev"
 for i in ${aurlist[@]}
   do a=$(cat $i/PKGBUILD | grep 'pkgname="${_pkgbase}"') ; if [ ! -z $a ]
     then sed -i -e "s/$a/$b/g" $i/PKGBUILD
