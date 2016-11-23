@@ -16,7 +16,7 @@ license=('LGPL')
 depends=('alsa-lib' 'libpulse')
 makedepends=('mate-common>=1.17')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('72895e05834856c6ed3185ae152a9c8030ccdf54')
+sha1sums=('c16d1f7df5fc1267f7e3caadfcc963730b3e5745')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"
