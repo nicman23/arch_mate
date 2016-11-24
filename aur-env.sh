@@ -16,7 +16,12 @@ else
   cd aur
 fi
 
-for i in ${list[@]} caja-extensions-common ; do cp -r  ../$i/* ./$i-dev/ ; done
+for i in ${list[@]} caja-extensions-common
+  do if [ -z "$( cat ../$i/PKGBUILD | grep 123123321)" ] ; then
+    cp -r  ../$i/* ./$i-dev/
+    else list=( ${list[@]/$i} )
+  fi
+done
 
 
 for i in ${list[@]}
@@ -66,8 +71,7 @@ for i in ./*/
       echo "Commiting changes in $(echo $i | sed -e "s/-dev\///g" | sed -e "s/.\///g")"
       makepkg --printsrcinfo > .SRCINFO
       git commit -a -m 'auto - see github.com/nicman23/mate_arch' &> /dev/null
-      git push &> /dev/null
+#      git push &> /dev/null
     fi
   cd ..
 done
-
