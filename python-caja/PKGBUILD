@@ -17,7 +17,7 @@ license=('GPL')
 depends=('caja>=1.17' 'python2-gobject')
 makedepends=('mate-common>=1.17')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('96c2631d3212830984539501b705edbe93180b8a')
 
 prepare() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"
