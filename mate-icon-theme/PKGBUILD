@@ -18,7 +18,7 @@ makedepends=('icon-naming-utils' 'mate-common>=1.17')
 options=(!strip !emptydirs)
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('e48ab88a0bf86ca99b1a7fbce8cf6ac4360c5443')
+sha1sums=('123123321')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

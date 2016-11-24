@@ -18,7 +18,7 @@ source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.
 groups=('mate-extra')
 replaces=("${_pkgbase}-gstreamer" "${_pkgbase}-pulseaudio")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3" "${_pkgbase}-gstreamer" "${_pkgbase}-pulseaudio")
-sha1sums=('e071d27c13e80b182f10a33d7a190825642d6f75')
+sha1sums=('123123321')
 
 prepare() {
     cd "${srcdir}"

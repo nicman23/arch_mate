@@ -21,7 +21,7 @@ optdepends=('mate-power-manager: Add power management support.'
             'rss-glx: Really slick screensavers.')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('c682e5e3efdaf15e6834857165b469a8f3a17993')
+sha1sums=('123123321')
 
 prepare() {
     cd "${srcdir}"

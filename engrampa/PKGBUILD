@@ -25,7 +25,7 @@ optdepends=('caja: file archiver extension'
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz"
         fr-rpm-bsdtar.patch)
-sha1sums=('90865e0c59bec33ed899c3a0a8d2787aa09d526b'
+sha1sums=('123123321'
           '219b05a979bf6f249aaae27964f02345fd81168d')
 
 prepare() {

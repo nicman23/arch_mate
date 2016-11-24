@@ -17,7 +17,7 @@ license=('GPL' 'LGPL')
 depends=('desktop-file-utils' 'yelp')
 makedepends=('mate-common>=1.17' 'yelp-tools')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('2084e109511dd82c08aafd3a71aa63d4b008df1b')
+sha1sums=('123123321')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"
