@@ -19,7 +19,6 @@ Features:
 * Updated to latest development upstream:  1.17.x 
 =======
 * Updated to latest development upstream:  1.16.x 
->>>>>>> 129eec30da3e0c00f59c10f4cd0db0ffb85bfbe9
 * GTK3 PKGBUILDs only
 * Build test all packages. The current methodology is to run them in my main machine as my daily driver.
 
