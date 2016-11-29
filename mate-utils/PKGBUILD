@@ -20,7 +20,7 @@ optdepends=('mate-panel: Look up words in dictionaries from the panel'
             'yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('cc531fc0e2118a97da6e2fe2c24bb0805a6fa1f2')
 
 prepare() {
     cd "${srcdir}"
