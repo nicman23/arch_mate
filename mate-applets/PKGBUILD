@@ -20,7 +20,7 @@ optdepends=('fortune-mod: for displaying fortune cookies in the Wanda the Fish a
             'yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('64742a98be03cf89099dbdd14e7b6baf2f9a0c2f')
 
 prepare() {
     cd "${srcdir}"
