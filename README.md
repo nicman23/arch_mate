@@ -13,9 +13,7 @@ You can install everything with mate-meta-dev package from the aur.
 
 Features:
 
-<<<<<<< HEAD
 * Updated to latest development upstream:  1.17.x 
-=======
 * GTK3 PKGBUILDs only
 
 Known Issues (things i removed from orginal community branch): 
