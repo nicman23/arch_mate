@@ -14,11 +14,11 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('LGPL')
 depends=('gtk-update-icon-cache')
-makedepends=('git' 'icon-naming-utils' 'mate-common>=1.17
+makedepends=('git' 'icon-naming-utils' 'mate-common>=1.17')
 options=(!strip)
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('0f6a27fed21f30d778dd045f6a0f2ba1c5d994d7')
+sha1sums=('123123321')
 
 prepare() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

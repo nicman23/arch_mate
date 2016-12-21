@@ -14,13 +14,13 @@ conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 url="http://mate-desktop.org"
 license=('GPL')
 depends=('glib2' 'gtksourceview2' 'gtk-update-icon-cache' 'libgtop' 'libnotify'
-         'mate-panel>=1.17
-makedepends=('docbook2x' 'docbook-xsl' 'mate-common>=1.17
+         'mate-panel>=1.17' 'polkit' 'python2-dbus' 'python2-gobject' 'upower')
+makedepends=('docbook2x' 'docbook-xsl' 'mate-common>=1.17' 'yelp-tools' 'gtksourceview3' 'mate-panel>=1.17')
 optdepends=('fortune-mod: for displaying fortune cookies in the Wanda the Fish applet'
             'yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('6e6b51089bcb6450a466ba358b71fcfd7aba3a6a')
+sha1sums=('64742a98be03cf89099dbdd14e7b6baf2f9a0c2f')
 
 prepare() {
     cd "${srcdir}"

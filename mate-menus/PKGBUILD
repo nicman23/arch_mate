@@ -14,10 +14,10 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('glib2' 'python2')
-makedepends=('gobject-introspection' 'mate-common>=1.17
+makedepends=('gobject-introspection' 'mate-common>=1.17')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('40b73ae7a151259c32ecd150c8fb77b5dc696f62')
+sha1sums=('123123321')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

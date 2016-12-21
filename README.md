@@ -15,7 +15,6 @@ Features:
 
 * Updated to latest development upstream:  1.17.x 
 * GTK3 PKGBUILDs only
-* Build test all packages. The current methodology is to run them in my main machine as my daily driver.
 
 Known Issues (things i removed from orginal community branch): 
 
@@ -23,4 +22,4 @@ Known Issues (things i removed from orginal community branch):
 * mate-netbook has never worked for me.
 * cannot make mate-indicator-applet because arch/aur lacks libido3
 
-This is currently updated with a cron job (with the script ./update.sh) on a 6 hour basis, every 12 am and pm local Greece time (with daylight savings when applicable).
+This is currently updated with a cron job (with the script ./update.sh) on a 6 hour basis, every 12 pm local Greece time (with daylight savings when applicable).

@@ -13,15 +13,15 @@ arch=('i686' 'x86_64')
 provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
-depends=('dbus-glib' 'glib2' 'libmatekbd>=1.17
-         'mate-desktop>=1.17
+depends=('dbus-glib' 'glib2' 'libmatekbd>=1.17' 'libnotify' 'libxss'
+         'mate-desktop>=1.17' 'mate-menus>=1.17' 'mate-session-manager>=1.17')
 makedepends=('intltool>=0.50.1')
 optdepends=('mate-power-manager: Add power management support.'
             'mate-screensaver-hacks: Additional screensavers.'
             'rss-glx: Really slick screensavers.')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('c682e5e3efdaf15e6834857165b469a8f3a17993')
+sha1sums=('c676ba7203a4f8ef9279ea9fb0a05950a10b74f7')
 
 prepare() {
     cd "${srcdir}"

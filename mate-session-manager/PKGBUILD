@@ -14,16 +14,16 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL' 'LGPL')
 depends=('dbus-glib' 'glib2' 'gtk3' 'gtk-update-icon-cache' 'libsm' 'libxtst'
-         'mate-desktop>=1.17
+         'mate-desktop>=1.17' 'mate-polkit>=1.17' 'mate-settings-daemon>=1.17'
          'ttf-dejavu' 'xdg-user-dirs')
-makedepends=('mate-common>=1.17
+makedepends=('mate-common>=1.17' 'xmlto' 'xtrans' 'gtk3' 'mate-desktop>=1.17' 'mate-polkit>=1.17' 'mate-settings-daemon>=1.17')
 optdepends=('lightdm-gtk-greeter: A lightweight display manager'
             'onboard: On-screen keyboard useful for mobility impaired users'
             'orca: Screen reader for blind or visually impaired individuals'
             'xdg-user-dirs-gtk: Add autostart that prompts to rename user directories when switching locales')
 groups=('mate')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('553b28bbbd9164e0403783db58015fa42d3ae38d')
+sha1sums=('123123321')
 
 prepare() {
     cd "${srcdir}"

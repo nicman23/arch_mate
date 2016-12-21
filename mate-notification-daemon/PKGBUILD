@@ -15,9 +15,9 @@ conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL' 'LGPL')
 depends=('dconf' 'dbus-glib' 'glib2' 'gtk3' 'gtk-update-icon-cache'
          'libcanberra' 'libwnck3' 'libwnck3' 'libnotify')
-makedepends=('mate-common>=1.17
+makedepends=('mate-common>=1.17')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('e3dbd1b91706503162f75103b3aa6d46335a4c94')
+sha1sums=('123123321')
 
 prepare() {
     cd "${srcdir}"

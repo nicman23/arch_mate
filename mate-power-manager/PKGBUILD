@@ -14,14 +14,14 @@ provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dbus-glib' 'dconf' 'glib2' 'gtk3' 'gtk-update-icon-cache' 'libcanberra'
-             'libgnome-keyring' 'libnotify' 'libunique3' 'mate-desktop>=1.17
-makedepends=('docbook2x' 'docbook-xml' 'mate-common>=1.17
-             'gtk3' 'libunique3' 'mate-desktop>=1.17
+             'libgnome-keyring' 'libnotify' 'libunique3' 'mate-desktop>=1.17' 'upower')
+makedepends=('docbook2x' 'docbook-xml' 'mate-common>=1.17' 'mate-panel>=1.17' 'xmlto' 'yelp-tools'
+             'gtk3' 'libunique3' 'mate-desktop>=1.17')
 optdepends=('mate-panel: Set brightness and inhibit power management from the panel'
             'yelp: for reading MATE help documents')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
 groups=('mate-extra')
-sha1sums=('a7089947d4ac2151e2b8182f4d130aba08d804d2')
+sha1sums=('dbd991820c7e332bd2d01ee519466a3c65f1d662')
 
 prepare() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"
