@@ -16,7 +16,7 @@ license=('GPL')
 depends=('dbus-glib' 'desktop-file-utils' 'glib2' 'gobject-introspection-runtime'
          'gtk3' 'gtk-update-icon-cache' 'exempi' 'lcms2' 'libexif' 'libjpeg-turbo'
          'librsvg' 'mate-desktop>=1.17' 'pygtk' 'python2-gobject2'
-         'startup-notification' 'zlib')
+         'startup-notification' 'zlib' 'libpeas')
 makedepends=('gobject-introspection' 'mate-common>=1.17' 'yelp-tools' 'gtk3' 'mate-desktop>=1.17')
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
