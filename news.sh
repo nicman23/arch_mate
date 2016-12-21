@@ -23,5 +23,6 @@ for i in ${news_array[@]}
   if [ "$firstrun" -eq '0' ]
     then news=$(diff $i ../NEWS.old/$i | sed -e '1 d' | sed -e 's/^. //g')
     [ -z "$news" ] || echo -e $i':\n'"$news">> ../arch_mate/NEWS
+    rm -rf ../NEWS.old
   fi
 done
