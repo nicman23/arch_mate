@@ -24,6 +24,10 @@ for i in ${news_array[@]}
     then news=$(diff $i ../NEWS.old/$i | sed -e '1 d' | sed -e 's/^. //g')
     [ -z "$news" ] || echo -e $i':\n'"$news">> ../arch_mate/NEWS
   fi
+
+  #github i am not ddosing you ffs
+  sleep 1s
+
 done
 
 rm -rf ../NEWS.old
