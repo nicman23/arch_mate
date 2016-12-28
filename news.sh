@@ -22,7 +22,7 @@ for i in ${news_array[@]}
   do curl https://raw.githubusercontent.com/mate-desktop/$i/master/NEWS > $i
   if [ "$firstrun" -eq '0' ]
     then news=$(diff $i ../NEWS.old/$i | sed -e '1 d' | sed -e 's/^. //g')
-    [ -z "$news" ] || echo -e $i':\n'"$news">> ../arch_mate/NEWS
+    [ -z "$news" ] || echo -e $i':\n'"$news"'\n'>> ../arch_mate/NEWS
   fi
 
   #github i am not ddosing you ffs
