@@ -9,6 +9,6 @@ reset_sha() {
 
 for i in */PKGBUILD ; do
   sed -i -e "s/pkgver=\${_ver}.*/pkgver=\${_ver}.0/g" $i
-  sed -i -e "s/1.17/$ver/g" $i
+  sed -i -e "s/1.19/$ver/g" $i
   reset_sha $i
 done
