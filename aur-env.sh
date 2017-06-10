@@ -2,11 +2,7 @@ mate_ver=1.17
 declare -a list
 declare -a aurlist
 
-temp=$(find ./*/ -maxdepth 0 | grep -v mate-themes | grep -v caja-extensions | grep -v aur | tr -d ./)
-
-for i in $(echo $temp)
- do list=(${list[@]} $i)
-done
+list=( $(find ./*/ -maxdepth 0 | grep -v mate-themes | grep -v caja-extensions | grep -v aur | tr -d ./) )
 
 mkdir aur &> /dev/null ; if [ "$?" = '0' ]
 then
@@ -19,13 +15,8 @@ fi
 for i in ${list[@]} caja-extensions-common
   do if [ -z "$( cat ../$i/PKGBUILD | grep 123123321)" ] ; then
     cp -r  ../$i/* ./$i-dev/
-    else list=( ${list[@]/$i\b} )
+    aurlist=( ${aurlist[@]} $i-dev )
   fi
-done
-
-
-for i in ${list[@]}
-  do aurlist=(${aurlist[@]} $i-dev)
 done
 
 #aurlist=(${aurlist[@]} mate-themes-$theme_ver-gtk3)
@@ -40,7 +31,6 @@ for i in ${aurlist[@]}
   sed -i -e "s/$c/$d/g" $i/PKGBUILD
 done
 
-
 #caja extensions bs
 a="caja>=$mate_ver" ; b="caja-dev"
 sed -i -e "s/$a/$b/g" ./caja-extensions-common-dev/PKGBUILD
@@ -53,7 +43,7 @@ for i in 'mate-common' 'caja-extensions-common' 'caja-gksu' 'caja-image-converte
 done
 
 #gen meta package
-a='depends=(' ; b=$(echo ${aurlist[@]/mate-meta-dev} caja-extensions-common-dev)
+a='depends=(' ; b=$(echo ${aurlist[@]})
 sed -i -e "/$a/a $b" mate-meta-dev/PKGBUILD
 
 status() {
