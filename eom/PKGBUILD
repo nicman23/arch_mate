@@ -21,7 +21,7 @@ makedepends=('gobject-introspection' 'mate-common>=1.19' 'yelp-tools' 'gtk3' 'ma
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('7316bde929a036124188c0bd2d119f36462c87a9')
 
 prepare() {
     cd "${srcdir}"

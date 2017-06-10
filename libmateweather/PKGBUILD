@@ -17,7 +17,7 @@ depends=('dconf' 'gtk3' 'libsoup' 'glib2' 'gtk-update-icon-cache')
 groups=('mate-extra')
 makedepends=('mate-common>=1.19')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('4d90c66f6fb3e646b720294401cfdba72bd65da5')
 
 prepare() {
     cd "${srcdir}"
