@@ -18,7 +18,7 @@ makedepends=('docbook2x' 'intltool>=0.50.1' 'yelp-tools' 'vte3' 'mate-desktop>=1
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('bd0bebc8407cbd857b18d9283fa9bcc92feaf84c')
 
 prepare() {
     cd "${srcdir}"

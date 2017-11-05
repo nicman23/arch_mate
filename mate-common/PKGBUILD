@@ -17,7 +17,7 @@ depends=('autoconf' 'automake' 'gettext' 'gtk-doc' 'intltool' 'libtool'
 groups=('mate')
 url="http://mate-desktop.org"
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('205a41981a3193ddd34e2e2a8562c939b64b8e51')
 
 build() {
     cd "${srcdir}/${_pkgbase}-${pkgver}"

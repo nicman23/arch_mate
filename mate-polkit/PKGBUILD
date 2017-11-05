@@ -16,7 +16,7 @@ license=('LGPL')
 depends=('gtk3' 'polkit' 'accountsservice')
 makedepends=('gobject-introspection' 'mate-common>=1.19')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('2e2a3ae287564944f14ca1e0728454550adffae8')
 
 prepare() {
     cd "${srcdir}"
