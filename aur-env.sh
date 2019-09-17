@@ -55,7 +55,7 @@ done
 find_dummy_hash() {
   mgick='123123321'
   for i in $*
-    do grep -q $mgick $i/PKGBUILD || echo -n $i
+    do grep -q $mgick $i/PKGBUILD || echo -n "$i "
   done
 }
 
