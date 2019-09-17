@@ -1,4 +1,4 @@
-ver=$1
+ver=$(git branch | grep \* | cut -d ' ' -f2)
 
 zsh -c 'echo -n > ~/.cache/notify-*/SHA1SUMS.old'
 

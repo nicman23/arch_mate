@@ -22,7 +22,7 @@ declare -a vers
 dir=$PWD
 
 update_ver (){
-  cd $dir
+  cd "${dir}"
 
   counter=0
   for i in ${pkgs[@]} ; do
@@ -56,7 +56,7 @@ notify_user () {
 counter=0
 
 for i in ${pkgs[@]} ; do
-  echo $i'	' "${shas[$counter]}" >> $dir/maintain-$name.txt
+  echo $i'	' "${shas[$counter]}" >> "${dir}"/maintain-$name.txt
   counter=$((counter + 1))
 done
 
@@ -75,12 +75,12 @@ hackyhack=$(echo $@ | tr -d ' >')
 
 if [ -z $hackyhack ]
 then
-  echo Same > $dir/maintain-$name.txt
+  echo Same > "${dir}"/maintain-$name.txt
   rm ~/.cache/notify-$name/$dl
   return 2
 fi
 
-echo "$name was updated" > $dir/maintain-$name.txt
+echo "$name was updated" > "${dir}"/maintain-$name.txt
 
 while true; do
   case $1 in
@@ -119,4 +119,4 @@ then
   fi
   notify_user
 fi
-cat $dir/maintain-$name.txt
+cat "${dir}"/maintain-$name.txt
