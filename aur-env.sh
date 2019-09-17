@@ -55,11 +55,13 @@ done
 find_dummy_hash() {
   mgick='123123321'
   for i in $*
-    do grep -q $mgick $i/PKGBUILD || echo -n "$i "
+    do grep -q $mgick ../${i/-dev}/PKGBUILD || echo -n "$i "
   done
 }
 
 #gen meta package
+#find_dummy_hash ${aurlist[@]/mate-meta-dev} caja-extensions-common-devw
+#exit
 a='depends=(' ; b=$(find_dummy_hash ${aurlist[@]/mate-meta-dev} caja-extensions-common-dev)
 sed -i -e "/$a/a $b" mate-meta-dev/PKGBUILD
 
