@@ -1,4 +1,4 @@
-mate_ver=1.17
+mate_ver=$(git branch | grep \* | cut -d ' ' -f2)
 declare -a list
 declare -a aurlist
 
