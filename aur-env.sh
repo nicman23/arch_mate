@@ -52,8 +52,15 @@ for i in 'mate-common' 'caja-extensions-common' 'caja-gksu' 'caja-image-converte
 
 done
 
+find_dummy_hash() {
+  mgick='123123321'
+  for i in $*
+    do grep -q $mgick $i/PKGBUILD || echo -n $i
+  done
+}
+
 #gen meta package
-a='depends=(' ; b=$(echo ${aurlist[@]/mate-meta-dev} caja-extensions-common-dev)
+a='depends=(' ; b=$(find_dummy_hash ${aurlist[@]/mate-meta-dev} caja-extensions-common-dev)
 sed -i -e "/$a/a $b" mate-meta-dev/PKGBUILD
 
 status() {
