@@ -2,10 +2,10 @@
 # Contributor:  eadrom <eadrom@archlinux.info>
 # Contributor:  Martin Wimpress <code@flexion.org>
 
-_ver=1.19
+_ver=1.23
 _pkgbase=mate-settings-daemon
 pkgname="${_pkgbase}"
-pkgver=${_ver}.0
+pkgver=${_ver}.2
 pkgrel=5
 pkgdesc="The MATE Settings daemon"
 url="http://mate-desktop.org"
@@ -13,14 +13,14 @@ arch=('i686' 'x86_64')
 provides=("${_pkgbase}" "${_pkgbase}-gtk3")
 license=('GPL')
 depends=('dbus-glib' 'dconf' 'fontconfig' 'glib2' 'gtk3' 'gtk-update-icon-cache'
-         'libcanberra-pulse' 'libmatekbd>=1.19' 'libmatemixer>=1.19' 'libnotify'
-         'libxt' 'mate-desktop>=1.19' 'nss' 'polkit')
-makedepends=('mate-common>=1.19' 'gtk3' 'libmatekbd>=1.19' 'mate-desktop>=1.19')
+         'libcanberra-pulse' 'libmatekbd>=1.23' 'libmatemixer>=1.23' 'libnotify'
+         'libxt' 'mate-desktop>=1.23' 'nss' 'polkit')
+makedepends=('mate-common>=1.23' 'gtk3' 'libmatekbd>=1.23' 'mate-desktop>=1.23')
 groups=('mate')
 replaces=("${_pkgbase}-gstreamer" "${_pkgbase}-pulseaudio")
 conflicts=("${_pkgbase}" "${_pkgbase}-gtk3" "${_pkgbase}-gstreamer" "${_pkgbase}-pulseaudio")
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('8c88f2b83b6d0500afae9e5700b55adb2fd082d2')
 
 prepare() {
     cd "${srcdir}"
