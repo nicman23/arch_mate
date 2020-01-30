@@ -19,7 +19,7 @@ makedepends=('caja>=1.19' 'libcanberra' 'libnotify' 'mate-common>=1.19' 'yelp-to
 optdepends=('yelp: for reading MATE help documents')
 groups=('mate-extra')
 source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
-sha1sums=('123123321')
+sha1sums=('a2cecf171aad8b421dbc8df5f5c0481fef1b6d32')
 
 prepare() {
     cd "${srcdir}"
